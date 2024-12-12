@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+body {
+    font-family: "Montserrat", "Merriweather";
+    margin: 0}
+    
+h1 {font-size: 3.5em;}
+h2 {font-size: 2.7em;}
+h3 {font-size: 1.25em;}
+ul {list-style: none; padding: 0;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #6f6748 ;
+    color: #ffffff ;
+    background-color: #6f6748;
+}
+
+button:hover{ background-color: #5a543a;}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{background-color: #6f6748;}
+
+header .logo{
+    width: 39%;}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-right: 30px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+header a:hover{
+    background-color: #ffffff;
+    color: #5a543a;
+}
+
+#hero {
+    background-image: linear-gradient(
+        0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)) 
+        ,url(img/wind.bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        min-height: 600px;
+}
+
+#hero .hero {
+    display: inline-block;
+    background-color: #5a543a;
+    padding: 30px;
+    color: #ffffff;}
+
+
+#hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px;
+}
+      
+#hero h1{
+    font-family: "merriweather";
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    background-color:#5a543a; 
+    padding: 10px; 
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+}
+
+#hero a{
+    font-family: "merriweather";
+    font-size: 55px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color:#5a543a; 
+    padding: 10px; 
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+}
+
+#hero .trailer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    background-color: rgba(0,0,0,0.95);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#hero .trailer.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+#hero .trailer iframe {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+#hero .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    height: 35px;
+}
+
+
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-top: 30px; 
+
+}
+
+#info .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#info .img-container {
+    background-image: url(/img/wind.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    width: 300px;
+}
+
+#info .texto p:first-of-type {
+    border-bottom: 2px solid #5a543a;
+    padding-bottom: 5px;
+    margin: 20px;
+    text-align: left;
+}
+
+#info p{
+    color: #5a543a;
+    margin: 0px 20px 15px;
+    text-align: left;
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: #ffffff;
+}
+
+footer .container{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items: center
+} 
+
+footer {
+    background-color: #433f2c;
+    padding: 0px 20px;
+    height: 20vh;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items: center
+}
+footer .social{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    flex-direction: row;
+    align-items: center}
+footer .logo{
+    width: 34%;}
+
+
+
+@media (min-width:720px) {
+
+    header .container {
+         flex-direction: row;
+        justify-content: space-between;
+    }
+    
+     header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        font-size: 3vh;
+    }
+    
+    header .logo{
+        width: 17%;
+        padding: 5px 0 5px 10px;
+    }
+
+    #info .info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #info .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    #info .texto {
+        flex: 1;
+        font-size: 3.8vh;
+        margin-right: 40px;
+    }
+    
+    #info .final {
+        margin-top: 20px;
+        align-self: flex-start;
+    }
+
+}

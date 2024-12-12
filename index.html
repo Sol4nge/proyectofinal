@@ -1,10 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>proyecto final</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Ghibli movies</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="container">
+                <img src="img/ghibli_logo_white.png" alt="studio Ghibli" class="logo"></p>
+
+            <nav>
+                <a href="#home">home</a>
+                <a href="#hayao">historia</a>
+                <a href="#peliculas">peliculas</a>
+                <a href="#eventos">eventos</a>
+                <button class="switch" id="switch">
+                    <span><i class="fa-solid fa-sun"></i></span>
+                    <span><i class="fa-solid fa-moon"></i></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+<section id="hero">
+    <div class="img-container"></div>
+        <div class="texto">
+            <h1>STUDIO<br>GHIBLI</h1>
+            <p>Si te gusta tanto la animación como a mi, te invito a conocer uno de los mas inspiradores estudios de animacion japonesa que vas a conocer jamas.</p>
+        </div>
+        
+</section>
+
+<section id="hayao">
+    <div class="container">
+        <div class="img-hayao"></div>
+        <div class="texto">
+            <h2>hayao Miyasaki</h2>
+            <p>Hayao Miyazaki nació el 5 de enero de 1941 en Tokio, Japón. Desde joven mostró interés por el dibujo y la animación, influenciado por su padre, quien dirigía una empresa de aviones. Estudió Ciencias Políticas y Económicas, pero su verdadera pasión siempre fue la animación, lo que lo llevó a trabajar en Toei Animation en 1963. Con el tiempo, Miyazaki desarrolló un estilo único que combina narrativas humanas con mensajes profundos sobre la naturaleza y la humanidad. Co-fundó Studio Ghibli en 1985 junto a Isao Takahata. Su ética de trabajo y perfeccionismo lo caracterizan, siendo un artista que supervisa cada detalle de sus proyectos, desde el guion hasta el último cuadro de animación. A pesar de haber anunciado su retiro varias veces, su pasión lo lleva a seguir creando historias.</p>
+        </div>
+    </div>
+</section>
+
+<section id="estudio">
+    <div class="container">
+        <div class="texto">
+            <h2>Historia de la compania</h2>
+            <p>Studio Ghibli es un reconocido estudio de animación japonés fundado en 1985 por Hayao Miyazaki, Isao Takahata y Toshio Suzuki. Surgió tras el éxito de Nausicaä del Valle del Viento (1984), dirigida por Miyazaki. Con sede en Tokio, destaca por su estilo visual único y sus narrativas profundas, abordando temas como la naturaleza, la familia y las emociones humanas.  
+            <br><br>
+            A lo largo de los años, ha mantenido su reputación como uno de los estudios más influyentes del mundo. Aunque Miyazaki ha anunciado varias veces su retiro, siempre ha regresado, siendo *El chico y la garza* (2023) su película más reciente. Ghibli sigue siendo un símbolo de calidad en la animación.  
+            </p>
+        </div>
+        <div class="img-hayao"></div>    
+    </div>
+</section>
+
+
+<section id="peliculas">
+    <div class="container">
+    <h2>Mis Peliculas Favoritas</h2>
+    <div class="posters">
+        <div class="cartas">
+            <h3>el castillo en el cielo</h3>
+            <form action="castillos-en-el-cielo.html" method="get">
+                <button type="submit">+ info</button>
+            </form>
+        </div>
+        <div class="cartas">
+            <h3>El viaje de chihiro</h3>
+            
+            <form action="el-viaje-de-chihiro.html" method="get">
+                <button type="submit">+ info</button>
+            </form>
+        </div>
+        <div class="cartas">
+            <h3>La princesa Mononoke</h3>
+            
+            <form action="la-princesa-mononoke.html" method="get">
+                <button type="submit">+ info</button>
+            </form>
+        </div>
+        <div class="cartas">
+            <h3>Ponyo</h3>
+            
+            <form action="ponyo.html" method="get">
+                <button type="submit">+ info</button>
+            </form>
+        </div>
+        <div class="cartas">
+            <h3>El viento se levanta</h3>
+            
+            <form action="viento.html" method="get">
+                <button type="submit">+ info</button>
+            </form>
+        </div>
+        <div class="cartas">
+            <h3>El cueto de la princesa kaguya</h3>
+            
+            <form action="kaguya.html" method="get">
+                <button type="submit">+ info</button>
+            </form>
+        </div>
+        <div class="cartas">
+            <h3>Cuando mernie estaba aqui</h3>
+        
+            <form action="mernie.html" method="get">
+                <button type="submit">+ info</button>
+            </form>
+        </div>
+        <div class="cartas">
+            <h3>El chico y la garza</h3>
+            
+            <form action="heron.html" method="get">
+                <button type="submit">+ info</button>
+            </form>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="eventos">
+    <div class="container">
+        <ul>
+            <li><a target="_blank" href="https://www.ghibli-museum-shop.jp/">Tienda online del Museo Mitaka Ghibli</a></li>
+            <li><a target="_blank" href="http://www.lawson.co.jp/ghibli/">Portal de Estudio Ghibli</a></li>
+            <li><a target="_blank" href="https://www.waltdisneystudios.jp/ghibli">Estudio Ghibli Blu-ray/DVD</a></li>
+            <li><a target="_blank" href="https://ghibli-park.jp/">jardin ghibli</a></li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+<div class="container">
+    <div class="social">
+<a target="_blank" href="https://www.facebook.com/">        
+    <img width="48" height="48" src="https://img.icons8.com/sf-regular/48/FFFFFF/facebook.png" alt="facebook"/>
+</a>
+
+<a target="_blank" href="https://www.instagram.com/so0lange/">
+    <img width="48" height="48" src="https://img.icons8.com/sf-regular/48/FFFFFF/instagram-new.png" alt="instagram-new"/>
+</a>
+
+<a target="_blank" href="https://www.tiktok.com/@_solalange?lang=es">
+    <img width="48" height="48" src="https://img.icons8.com/sf-regular/48/FFFFFF/tiktok.png" alt="tiktok"/>
+</a>
+
+    </div>
+    <p>&copy;SolOjeda 2024</p>
+    <img src="img/ghibli_logo_white.png" alt="studio Ghibli" class="logo">
+</div>
+</footer>
+
+<script src="java.js"></script>
+
 </body>
 </html>
